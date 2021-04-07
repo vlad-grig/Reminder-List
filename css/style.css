@@ -1,0 +1,16 @@
+.navba-brand {
+    float: right;
+    padding: 10px 10px;
+}
+
+.input-group {
+    padding: 15px 15px;
+}
+
+.col-sm-4 {
+    padding-top: 15px;
+}
+
+.thumbnail {
+    background-color: rgb(108, 115, 167);
+}
