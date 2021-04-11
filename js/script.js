@@ -1,6 +1,6 @@
-var numarTask = 1;
+var taskNumber = 1;
 
-function adaugareTask() {
+function addTask() {
     // var task = $('#task').val();
     var eUrgent = $('#urgent').is(':checked');
     var divClass = "form-control";
@@ -8,24 +8,24 @@ function adaugareTask() {
         divClass += " alert-danger";
     }
     $('#lista').append(`
-    <div class="input-group" id="` + numarTask + `">
-    <button class="btn btn-default">
-    <span><input type="checkbox" id="urgent"></span>
-  </button>
+    <div class="input-group" id="` + taskNumber + `">
+        <button class="btn btn-default">
+            <span><input type="checkbox" id="urgent"></span>
+        </button>
 
         <input type="text" class="` + divClass + `">
         <div class="input-group-btn">
-                <button type="button" class="btn btn-info" onclick="return stergereTask(` + numarTask + `);">
-                  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                </button>
+            <button type="button" class="btn btn-info" onclick="return deleteTask(` + taskNumber + `);">
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            </button>
         </div>
     </div>
     `);
-    ++numarTask;
+    ++taskNumber;
     return false;
 }
 
-function stergereTask(idTask) {
+function deleteTask(idTask) {
     $('#' + idTask).remove();
     return false;
 }
