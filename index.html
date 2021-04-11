@@ -28,7 +28,6 @@
         <div class="navbar-header">
           <a class="navba-brand" href="#">
             <img src="images/brand.png" alt="reminder image">
-
           </a>
         </div>
       </div>
@@ -38,31 +37,23 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-sm-4 col-md-4">
+      <div class="container">
         <div class="thumbnail">
           <img src="images/my-list.png" alt="reminder image">
           <div class="caption">
             <p>
-              <a href="#" class="btn btn-info" role="button">
+              <a href="#" class="btn btn-info" role="button" type="submit" onclick="return adaugareTask();">
                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
               </a>
               <a href="#" class="btn btn-danger" role="button">
-                <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
+                <span><input type="checkbox" id="urgent"></span> Urgent?
               </a>
             </p>
           </div>
         </div>
       </div>
 
-      <div class="input-group">
-        <input type="text" class="form-control" aria-label="...">
-        <div class="input-group-btn">
-          <div class="btn-group">
-            <button type="button" class="btn btn-info">
-              <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-            </button>
-          </div>
-        </div>
+      <div id="lista">
       </div>
 
     </div>
@@ -77,6 +68,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
     integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
   </script>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
